@@ -27,7 +27,7 @@ export default function Portfolio() {
             solution="We built a professional website with an online booking system. Customers could now book 24/7, reducing the burden on manual phone bookings."
             result="Increase in bookings in 3 months"
             resultValue="30% increase in bookings"
-            video ="/h-a-enterprises/videos/KasTheBarber.mp4" 
+            video ="/h-a-enterprises/videos/kasTheBarber.mp4" 
           />
           <CaseStudyCard
             salon="Venus Barbers"
