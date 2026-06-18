@@ -5,42 +5,47 @@ export const metadata = {
   description: 'Learn about H&A Enterprises, our team, and our mission to help salon owners succeed online.',
 }
 
+// Add this helper inside your component file
+const isNetlify = process.env.NEXT_PUBLIC_NETLIFY === 'true';
+const assetPrefix = isNetlify ? '' : '/h-a-enterprises';
+
+
 export default function About() {
   const teamMembers = [
     {
       name: 'Hamida',
       role: 'Founder',
-      image: '/h-a-enterprises/team/hamida.jpg',
+      image: `${assetPrefix}/team/hamida.jpg`,
       bio: 'Hamida leads H&A Enterprises with a vision to transform how salon owners do business. With expertise across the business, Hamida ensures every client gets the best service and support.',
     },
     {
       name: 'Ayyaz',
       role: 'Co-Founder',
-      image: '/h-a-enterprises/team/ayyaz.png',
+      image: `${assetPrefix}/team/ayyaz.png`,
       bio: 'Ayyaz co-founded H&A Enterprises and brings strategic expertise. Together with Hamida, Ayyaz drives the company\'s mission to help salons succeed online.',
     },
     {
       name: 'Shaheer',
       role: 'Lead Developer',
-      image: '/h-a-enterprises/team/shaheer.png',
+      image: `${assetPrefix}/team/shaheer.png`,
       bio: 'Shaheer is our Lead Developer with deep expertise in building scalable, reliable software. He ensures every website and booking system we build is fast, secure, and user-friendly.',
     },
     {
       name: 'Waqas',
       role: 'Full-Stack Developer',
-      image: '/h-a-enterprises/team/waqas.png',
+      image: `${assetPrefix}/team/waqas.png`,
       bio: 'Waqas brings full-stack development expertise to every project. From frontend design to backend systems, Waqas ensures everything works perfectly.',
     },
     {
       name: 'Amna',
       role: 'Business Development Head',
-      image: '/h-a-enterprises/team/amna.png',
+      image: `${assetPrefix}/team/amna.png`,
       bio: 'Amna leads client relationships and ensures every salon gets personalized attention. She understands the salon business and what clients need to succeed.',
     },
     {
       name: 'Daniel',
       role: 'Web Designer',
-      image: '/h-a-enterprises/team/daniel.jpg',
+      image: `${assetPrefix}/team/daniel.jpg`,
       bio: 'Daniel creates beautiful, professional designs that build customer trust. Every website we build is designed to convert visitors into bookings.',
     },
   ]

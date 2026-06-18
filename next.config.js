@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
+// Netlify automatically sets NETLIFY=true during its build process
+const isNetlify = process.env.NETLIFY === 'true';
+
 const nextConfig = {
-  output: 'export',          // Tells Next.js to build static HTML/CSS files
+  output: 'export', 
   images: {
-    unoptimized: true,       // Required because GitHub Pages doesn't support the Next.js image server
+    unoptimized: true, 
   },
-  basePath: '/h-a-enterprises',      // Matches your exact GitHub repository name
+  // If building on Netlify, basePath is empty. If on GitHub, it uses the subpath.
+  basePath: isNetlify ? '' : '/h-a-enterprises', 
 };
 
 export default nextConfig;

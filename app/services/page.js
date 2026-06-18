@@ -9,7 +9,9 @@ export const metadata = {
   description: 'Online booking systems, professional websites, and payment processing for salons and barber shops.',
 }
 
-
+// Add this helper inside your component file
+const isNetlify = process.env.NEXT_PUBLIC_NETLIFY === 'true';
+const assetPrefix = isNetlify ? '' : '/h-a-enterprises';
 
 export default function Services() {
   return (
@@ -63,7 +65,7 @@ export default function Services() {
     muted
     loop
   >
-    <source src="/h-a-enterprises/videos/bookingSystem.mp4" type="video/mp4" />
+    <source src={`${assetPrefix}/videos/bookingSystem.mp4`} type="video/mp4" />
   </video>
   </div>
           </div>
@@ -82,7 +84,7 @@ export default function Services() {
     muted
     loop
   >
-    <source src="/h-a-enterprises/videos/kasTheBarber.mp4" type="video/mp4" />
+    <source src={`${assetPrefix}/videos/kasTheBarber.mp4`} type="video/mp4" />
   </video>
 </div>
             <div className="order-1 lg:order-2">

@@ -7,6 +7,10 @@ export const metadata = {
   description: 'Get your salon online in 30 days. Professional booking systems and websites for barber shops and salons.',
 }
 
+// Add this helper inside your component file
+const isNetlify = process.env.NEXT_PUBLIC_NETLIFY === 'true';
+const assetPrefix = isNetlify ? '' : '/h-a-enterprises';
+
 export default function Home() {
   return (
     <>
@@ -27,7 +31,7 @@ export default function Home() {
               {/* <p className="text-gray-400 text-center"> */}
                 <div className="relative bg-background-light rounded-lg h-96 w-full overflow-hidden border-2 border-dashed border-white border-opacity-30 ">
                     <Image
-                      src="/h-a-enterprises/hero.png"
+                      src={`${assetPrefix}/hero.png`}
                       alt="Hero image"
                       fill
                       className="object-cover transition-transform duration-500 hover:scale-105"

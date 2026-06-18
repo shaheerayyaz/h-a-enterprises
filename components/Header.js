@@ -4,6 +4,12 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Image from 'next/image'
 
+
+// Add this helper inside your component file
+const isNetlify = process.env.NEXT_PUBLIC_NETLIFY === 'true';
+const assetPrefix = isNetlify ? '' : '/h-a-enterprises';
+
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -16,7 +22,7 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" className="hover:opacity-80 transition">
             <Image
-              src="/h-a-enterprises/header.png"
+              src={`${assetPrefix}/header.png`}
               alt="H&A Enterprises"
               width={140}
               height={40}
