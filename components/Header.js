@@ -27,7 +27,7 @@ export default function Header() {
               width={140}
               height={40}
               priority
-            />
+            /> 
           </Link>
         </div>
 
