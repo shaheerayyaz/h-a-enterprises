@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export',          // Tells Next.js to build static HTML/CSS files
   images: {
-    unoptimized: true,
+    unoptimized: true,       // Required because GitHub Pages doesn't support the Next.js image server
   },
-  output: 'standalone',
-}
+  basePath: '/h-a-enterprises',      // Matches your exact GitHub repository name
+};
 
-module.exports = nextConfig
+export default nextConfig;
