@@ -10,31 +10,37 @@ export default function About() {
     {
       name: 'Hamida',
       role: 'Founder',
+      image: '/team/hamida.jpg',
       bio: 'Hamida leads H&A Enterprises with a vision to transform how salon owners do business. With expertise across the business, Hamida ensures every client gets the best service and support.',
     },
     {
       name: 'Ayyaz',
       role: 'Co-Founder',
+      image: '/team/ayyaz.png',
       bio: 'Ayyaz co-founded H&A Enterprises and brings strategic expertise. Together with Hamida, Ayyaz drives the company\'s mission to help salons succeed online.',
     },
     {
       name: 'Shaheer',
       role: 'Lead Developer',
+      image: '/team/shaheer.png',
       bio: 'Shaheer is our Lead Developer with deep expertise in building scalable, reliable software. He ensures every website and booking system we build is fast, secure, and user-friendly.',
     },
     {
       name: 'Waqas',
       role: 'Full-Stack Developer',
+      image: '/team/waqas.png',
       bio: 'Waqas brings full-stack development expertise to every project. From frontend design to backend systems, Waqas ensures everything works perfectly.',
     },
     {
       name: 'Amna',
       role: 'Business Development Head',
+      image: '/team/amna.png',
       bio: 'Amna leads client relationships and ensures every salon gets personalized attention. She understands the salon business and what clients need to succeed.',
     },
     {
       name: 'Daniel',
       role: 'Web Designer',
+      image: '/team/daniel.jpg',
       bio: 'Daniel creates beautiful, professional designs that build customer trust. Every website we build is designed to convert visitors into bookings.',
     },
   ]
@@ -75,9 +81,12 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member) => (
               <div key={member.name} className="card">
-                <div className="bg-background-light rounded-lg h-48 flex items-center justify-center mb-4 border-2 border-dashed border-text-border">
-                  <p className="text-text-medium text-center">[Photo Placeholder]</p>
-                </div>
+<div className="w-36 h-36 mx-auto mb-4 rounded-full overflow-hidden border-4 border-accent-teal/30 shadow-md">  <img
+    src={member.image}
+    alt={member.name}
+    className="w-full h-full object-cover"
+  />
+</div>
                 <h3 className="text-xl font-bold text-primary-navy mb-1">{member.name}</h3>
                 <p className="text-accent-teal font-semibold mb-4">{member.role}</p>
                 <p className="text-text-medium">{member.bio}</p>

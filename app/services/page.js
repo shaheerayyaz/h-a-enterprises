@@ -1,60 +1,15 @@
-import ServiceCard from '@/components/ServiceCard'
 import PricingCard from '@/components/PricingCard'
-import FAQItem from '@/components/FAQItem'
 import CTASection from '@/components/CTASection'
-import { useState } from 'react'
+import ServiceCard from '@/components/ServiceCard'
+import ServicesFAQ from './ServicesFAQ'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Services - H&A Enterprises',
   description: 'Online booking systems, professional websites, and payment processing for salons and barber shops.',
 }
 
-// Client component for FAQ
-function ServicesFAQ() {
-  const [openIndex, setOpenIndex] = useState(null)
 
-  const faqs = [
-    {
-      question: 'How long does it take to build my website?',
-      answer: 'Starter packages take 1-2 weeks. Professional packages take 3-4 weeks. The timeline depends on how quickly you provide photos, descriptions, and feedback.'
-    },
-    {
-      question: 'Can I update my website myself?',
-      answer: 'Yes! We'll train you on how to update services, prices, and other information. Or, we can manage updates for you (included with Professional package).'
-    },
-    {
-      question: 'I don't know anything about technology. Can you handle everything?',
-      answer: 'Absolutely. You don't need to know anything about tech. We handle all the technical stuff. You just focus on your salon.'
-    },
-    {
-      question: 'What if I need changes after launch?',
-      answer: 'We provide support after launch. Small updates are covered. For bigger changes, we can discuss options.'
-    },
-    {
-      question: 'Will this help me get more customers?',
-      answer: 'Yes. Our clients see 20-50% increases in bookings within the first 3 months. Online presence brings in new customers and reduces missed bookings.'
-    },
-  ]
-
-  return (
-    <section className="section">
-      <div className="container">
-        <h2 className="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-        <div className="max-w-2xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
-            <FAQItem
-              key={index}
-              question={faq.question}
-              answer={faq.answer}
-              isOpen={openIndex === index}
-              onClick={() => setOpenIndex(openIndex === index ? null : index)}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
 
 export default function Services() {
   return (
@@ -100,9 +55,17 @@ export default function Services() {
                 </li>
               </ul>
             </div>
-            <div className="bg-background-light rounded-lg h-80 flex items-center justify-center border-2 border-dashed border-text-border">
-              <p className="text-text-medium text-center">[Video/Screenshot Placeholder]</p>
-            </div>
+            <div className="bg-background-light rounded-lg h-80 overflow-hidden border-2 border-dashed border-text-border">
+  <video
+    className="w-full h-full object-cover"
+    controls
+    autoPlay
+    muted
+    loop
+  >
+    <source src="/videos/bookingSystem.mp4" type="video/mp4" />
+  </video>
+</div>
           </div>
         </div>
       </section>
@@ -111,9 +74,17 @@ export default function Services() {
       <section className="section section-light">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-            <div className="bg-background-white rounded-lg h-80 flex items-center justify-center border-2 border-dashed border-text-border order-2 lg:order-1">
-              <p className="text-text-medium text-center">[Video/Screenshot Placeholder]</p>
-            </div>
+            <div className="bg-background-white rounded-lg h-80 overflow-hidden border-2 border-dashed border-text-border order-2 lg:order-1">
+  <video
+    className="w-full h-full object-cover"
+    controls
+    autoPlay
+    muted
+    loop
+  >
+    <source src="/videos/kasTheBarber.mp4" type="video/mp4" />
+  </video>
+</div>
             <div className="order-1 lg:order-2">
               <h2 className="text-4xl font-bold mb-4">Professional Website</h2>
               <p className="text-lg text-text-medium mb-6">
@@ -148,7 +119,7 @@ export default function Services() {
       </section>
 
       {/* SERVICE 3: PAYMENTS */}
-      <section className="section">
+      {/* <section className="section">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -185,7 +156,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* PRICING */}
       <section className="section section-light">
@@ -201,6 +172,8 @@ export default function Services() {
                 'Professional Website',
                 'Online Booking System',
                 'Basic Features',
+                'Customer Support',
+
               ]}
             />
             <PricingCard
@@ -210,7 +183,7 @@ export default function Services() {
               features={[
                 'Professional Website',
                 'Online Booking System',
-                'Payment Processing',
+                
                 'Advanced Analytics',
                 'Priority Support',
               ]}

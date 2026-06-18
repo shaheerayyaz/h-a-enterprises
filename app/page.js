@@ -24,7 +24,16 @@ export default function Home() {
               </Link>
             </div>
             <div className="bg-background-light rounded-lg h-96 flex items-center justify-center border-2 border-dashed border-white border-opacity-30">
-              <p className="text-gray-400 text-center">[Video/Screenshot Placeholder - You'll add video here]</p>
+              {/* <p className="text-gray-400 text-center"> */}
+                <div className="relative bg-background-light rounded-lg h-96 w-full overflow-hidden border-2 border-dashed border-white border-opacity-30 ">
+                    <Image
+                      src="/hero.png"
+                      alt="Hero image"
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-105"
+                    />
+                </div>
+              {/* </p> */}
             </div>
           </div>
         </div>

@@ -27,22 +27,25 @@ export default function Portfolio() {
             solution="We built a professional website with an online booking system. Customers could now book 24/7, reducing the burden on manual phone bookings."
             result="Increase in bookings in 3 months"
             resultValue="30% increase in bookings"
+            video="/videos/KasTheBarber.mp4"
           />
           <CaseStudyCard
-            salon="Trimmers"
-            location="United States"
-            challenge="Trimmers had no website and was missing out on online bookings. Local customers couldn't find them on Google."
-            solution="We created a modern, professional website with integrated online booking. Now customers can discover Trimmers online and book instantly."
+            salon="Venus Barbers"
+            location="United Kingdom"
+            challenge="Venus Barbers had no website and was missing out on online bookings. Local customers couldn't find them on Google."
+            solution="We created a modern, professional website with integrated online booking. Now customers can discover Venus Barbers online and book instantly."
             result="Increase in bookings"
             resultValue="30% increase in bookings"
+            video="/videos/venusBarbers.mp4"
           />
           <CaseStudyCard
             salon="SZ Cutzz"
-            location="United Kingdom"
+            location="America"
             challenge="SZ Cutzz was overwhelmed with phone calls for bookings. Staff was spending too much time scheduling instead of serving customers."
             solution="We implemented an online booking system that automated the entire scheduling process. Customers book online, get automatic confirmations."
             result="Reduction in phone calls"
             resultValue="50% reduction in phone calls"
+            video="/videos/bookingSystem.mp4"
           />
         </div>
       </section>

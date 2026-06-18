@@ -1,13 +1,22 @@
 'use client'
 
-export default function CaseStudyCard({ salon, location, challenge, solution, result, resultValue }) {
+export default function CaseStudyCard({ salon, location, challenge, solution, result, resultValue, video}) {
   return (
     <div className="mb-12 pb-12 border-b border-text-border last:border-b-0">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Image/Video Placeholder */}
-        <div className="bg-background-light rounded-lg h-64 lg:h-80 flex items-center justify-center border-2 border-dashed border-text-border">
-          <p className="text-text-medium text-center">[Video/Screenshot Placeholder]</p>
-        </div>
+        <div className="relative bg-background-light rounded-lg h-64 lg:h-80 overflow-hidden border-2 border-dashed border-text-border">
+  <video
+    className="w-full h-full object-cover"
+    controls
+    autoPlay
+    muted
+    loop
+  >
+<source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
         {/* Content */}
         <div>
