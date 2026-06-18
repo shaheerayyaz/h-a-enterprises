@@ -63,7 +63,7 @@ export default function Services() {
     muted
     loop
   >
-    <source src="/h-a-enterprises/public/videos/bookingSystem.mp4" type="video/mp4" />
+    <source src="/h-a-enterprises/videos/bookingSystem.mp4" type="video/mp4" />
   </video>
   </div>
           </div>
@@ -82,7 +82,7 @@ export default function Services() {
     muted
     loop
   >
-    <source src="/h-a-enterprises/public/videos/kasTheBarber.mp4" type="video/mp4" />
+    <source src="/h-a-enterprises/videos/kasTheBarber.mp4" type="video/mp4" />
   </video>
 </div>
             <div className="order-1 lg:order-2">

@@ -16,7 +16,7 @@ export default function Header() {
         <div className="flex items-center">
           <Link href="/" className="hover:opacity-80 transition">
             <Image
-              src="/h-a-enterprises/public/header.png"
+              src="/h-a-enterprises/header.png"
               alt="H&A Enterprises"
               width={140}
               height={40}
