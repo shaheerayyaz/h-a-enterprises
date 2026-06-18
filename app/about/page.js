@@ -28,7 +28,7 @@ export default function About() {
     {
       name: 'Waqas',
       role: 'Full-Stack Developer',
-      image: '/h-a-enterprisesc/team/waqas.png',
+      image: '/h-a-enterprises/team/waqas.png',
       bio: 'Waqas brings full-stack development expertise to every project. From frontend design to backend systems, Waqas ensures everything works perfectly.',
     },
     {
