@@ -10,37 +10,37 @@ export default function About() {
     {
       name: 'Hamida',
       role: 'Founder',
-      image: '/team/hamida.jpg',
+      image: '/h-a-enterprises/public/team/hamida.jpg',
       bio: 'Hamida leads H&A Enterprises with a vision to transform how salon owners do business. With expertise across the business, Hamida ensures every client gets the best service and support.',
     },
     {
       name: 'Ayyaz',
       role: 'Co-Founder',
-      image: '/team/ayyaz.png',
+      image: '/h-a-enterprises/public/team/ayyaz.png',
       bio: 'Ayyaz co-founded H&A Enterprises and brings strategic expertise. Together with Hamida, Ayyaz drives the company\'s mission to help salons succeed online.',
     },
     {
       name: 'Shaheer',
       role: 'Lead Developer',
-      image: '/team/shaheer.png',
+      image: '/h-a-enterprises/public/team/shaheer.png',
       bio: 'Shaheer is our Lead Developer with deep expertise in building scalable, reliable software. He ensures every website and booking system we build is fast, secure, and user-friendly.',
     },
     {
       name: 'Waqas',
       role: 'Full-Stack Developer',
-      image: '/team/waqas.png',
+      image: '/h-a-enterprises/public/team/waqas.png',
       bio: 'Waqas brings full-stack development expertise to every project. From frontend design to backend systems, Waqas ensures everything works perfectly.',
     },
     {
       name: 'Amna',
       role: 'Business Development Head',
-      image: '/team/amna.png',
+      image: '/h-a-enterprises/public/team/amna.png',
       bio: 'Amna leads client relationships and ensures every salon gets personalized attention. She understands the salon business and what clients need to succeed.',
     },
     {
       name: 'Daniel',
       role: 'Web Designer',
-      image: '/team/daniel.jpg',
+      image: '/h-a-enterprises/public/team/daniel.jpg',
       bio: 'Daniel creates beautiful, professional designs that build customer trust. Every website we build is designed to convert visitors into bookings.',
     },
   ]
