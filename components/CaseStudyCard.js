@@ -8,12 +8,13 @@ export default function CaseStudyCard({ salon, location, challenge, solution, re
         <div className="relative bg-background-light rounded-lg h-64 lg:h-80 overflow-hidden border-2 border-dashed border-text-border">
   <video
     className="w-full h-full object-cover"
+    src={video} type="video/mp4"
     controls
     autoPlay
     muted
     loop
+    playsInline
   >
-<source src={video} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 </div>
